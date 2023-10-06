@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gabarito', cursive;
+}
+
+:root{
+    --primary-color:#4e4f4c;
+    --secondary-color:white;
+    --grey:#e2e3df;
+
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./assets/img/bg\ 1.jpg");
+
+}
+
+.container{
+    height: 100%;
+    width: 80%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sec1{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1px;
+}
+
+.sec1 img{
+    width: 55%;
+    object-fit: scale-down;
+}
+
+.steller{
+    height: 100px;
+    position: absolute;
+    top: 19%;
+    left: 8%;
+}
+.sec1 p{
+    font-size: 22px;
+    color: var(--primary-color);
+    width: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* background-color: aquamarine; */
+}
+.sec2{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sec2 a{
+    text-decoration: none;
+    font-size: 28px;
+    background-color: var(--primary-color);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 10px 35px;
+    transition: 0.3s;
+}
+
+.sec2 p{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+}
+
+.sec2 p span{
+    padding: 1px 2px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.sec3{
+    position: absolute;
+    bottom: 0%;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    font-size: 18px;
+    gap: 10px;
+    color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.hov:hover{
+    border: 1px solid var(--primary-color);
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+/* media Query */
+@media only screen and (max-width: 600px){
+    .sec1{
+        height: 150px;
+        line-height: 12px;
+    }
+    .sec1 img{
+        width: 100%;
+    }
+    .sec1 p{
+        width: 93%;
+        font-size: 20px;
+    }
+    .sec2 a{
+        font-size: 22px;
+    }
+    .sec2 p{
+        font-size: 14px;
+    }
+}
